@@ -17,6 +17,8 @@ namespace TestGithub
             InitializeComponent();
         }
 
+
+
         private void Loadform(object Form)
         {
             if (this.mainpanel.Controls.Count > 0)

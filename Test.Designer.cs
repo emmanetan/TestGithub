@@ -35,7 +35,9 @@
             this.sidepanel = new System.Windows.Forms.Panel();
             this.mainpanel = new Siticone.UI.WinForms.SiticonePanel();
             this.btnLogout = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.panel1 = new AntdUI.Panel();
             this.sidepanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnProduct
@@ -46,7 +48,7 @@
             this.btnProduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.HoveredState.Parent = this.btnProduct;
-            this.btnProduct.Location = new System.Drawing.Point(12, 214);
+            this.btnProduct.Location = new System.Drawing.Point(12, 248);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.ShadowDecoration.Parent = this.btnProduct;
             this.btnProduct.Size = new System.Drawing.Size(233, 56);
@@ -62,7 +64,7 @@
             this.btnUser.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.HoveredState.Parent = this.btnUser;
-            this.btnUser.Location = new System.Drawing.Point(12, 276);
+            this.btnUser.Location = new System.Drawing.Point(12, 310);
             this.btnUser.Name = "btnUser";
             this.btnUser.ShadowDecoration.Parent = this.btnUser;
             this.btnUser.Size = new System.Drawing.Size(233, 56);
@@ -78,7 +80,7 @@
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
             this.btnReport.HoveredState.Parent = this.btnReport;
-            this.btnReport.Location = new System.Drawing.Point(12, 338);
+            this.btnReport.Location = new System.Drawing.Point(12, 372);
             this.btnReport.Name = "btnReport";
             this.btnReport.ShadowDecoration.Parent = this.btnReport;
             this.btnReport.Size = new System.Drawing.Size(233, 56);
@@ -101,7 +103,7 @@
             // sidepanel
             // 
             this.sidepanel.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.sidepanel.Controls.Add(this.btnLogout);
+            this.sidepanel.Controls.Add(this.panel1);
             this.sidepanel.Controls.Add(this.btnReport);
             this.sidepanel.Controls.Add(this.Label);
             this.sidepanel.Controls.Add(this.btnProduct);
@@ -125,19 +127,32 @@
             // btnLogout
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedState.Parent = this.btnLogout;
             this.btnLogout.CustomImages.Parent = this.btnLogout;
-            this.btnLogout.FillColor = System.Drawing.Color.Gray;
+            this.btnLogout.FillColor = System.Drawing.SystemColors.WindowFrame;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.HoveredState.Parent = this.btnLogout;
-            this.btnLogout.Location = new System.Drawing.Point(71, 718);
+            this.btnLogout.Location = new System.Drawing.Point(96, 19);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
             this.btnLogout.Size = new System.Drawing.Size(114, 44);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.Back = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(88)))), ((int)(((byte)(90)))));
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Location = new System.Drawing.Point(12, 677);
+            this.panel1.Name = "panel1";
+            this.panel1.Radius = 20;
+            this.panel1.Size = new System.Drawing.Size(233, 83);
+            this.panel1.TabIndex = 0;
+            this.panel1.Text = "panel1";
             // 
             // Test
             // 
@@ -152,6 +167,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.sidepanel.ResumeLayout(false);
             this.sidepanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -164,6 +180,7 @@
         private System.Windows.Forms.Panel sidepanel;
         private Siticone.UI.WinForms.SiticonePanel mainpanel;
         private Siticone.UI.WinForms.SiticoneRoundedButton btnLogout;
+        private AntdUI.Panel panel1;
     }
 }
 
